@@ -5,8 +5,12 @@ A very very incomplete custom libc implementation for Linux written in x86 assem
 
 ### How to compile
 To test the lib you need Nasm x86 assembler and probably a C compiler. Then you can do something like this:
-```nasm -f elf64 -o stdio.o lib-src/x86-64/stdio.asm```
+```
+nasm -f elf64 -o stdio.o lib-src/x86-64/stdio.asm`
+```
 And then link with your C code:
-```clang stdio.o usage_example.c test_app```
+```
+clang stdio.o usage_example.c test_app
+```
 
 You might have to tweak some parameters for it to work.
